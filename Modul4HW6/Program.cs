@@ -23,22 +23,7 @@ namespace Modul4HW6
             var appContextFactory = new AppContextFactory();
             using (appContext = appContextFactory.CreateDbContext(args))
             {
-                //1
-
-                //2
-                var songsQuantity = appContext.Song
-                    .GroupBy(i => i.Genre.Title)
-                    .Select(s => new
-                    {
-                        GenreTitle = s.Key,
-                        Count = s.Count()
-                    })
-                    .ToList();
-                //3
-                var youngArtist = appContext.Artists.Max(a => a.DateOfBirth);
-                var Released = appContext.Song
-                    .Where(s => s.ReleasedDate < youngArtist)
-                    .ToList();
+                
             }
 
         }
