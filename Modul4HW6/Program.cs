@@ -42,7 +42,7 @@ namespace Modul4HW6
                 //3
                 var youngArtists = appContext.Artists.Max(a => a.DateOfBirth);
                 var Released = appContext.Songs
-                    .Where(s => s.ReleasedDate < youngArtist)
+                    .Where(s => s.ReleasedDate < youngArtists)
                     .ToList();
             }
             
