@@ -1,5 +1,5 @@
 ﻿{
   "ConnectionStrings": {
-    "App": "Server=ZBOOK;Database=App1;Trusted_Connection=True"
+    "App": "Server=ZBOOK;Database=App;Trusted_Connection=True"
   }
 }

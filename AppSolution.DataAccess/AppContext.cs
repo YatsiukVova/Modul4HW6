@@ -3,7 +3,7 @@ using System;
 using Modul4HW6.DataAccess.Models;
 using Modul4HW6.DataAccess.Configurations;
 
-namespace Modul4HW6
+namespace Modul4HW6.DataAccess
 {
     public class AppContext : DbContext
     {
